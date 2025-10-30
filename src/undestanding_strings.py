@@ -52,3 +52,42 @@ last_name = "mercury"
 full_name = first_name + " " + last_name
 print(full_name)
 print(full_name .title())
+
+
+#Whitespaces
+
+"""
+Un writespace se refiere a cualquier caracter que 
+no se imprime, es decir un espacio, tabulador y 
+finales de linea. Los Writespace se utilizan 
+comunmente para organizar las salidas de tal manera
+que sea mas amigable de leer o ver para el usuario
+
+Ejemplo:
+ -tabulador: \t
+ -salto de linea: \n
+
+"""
+print("writespace Tabulador")
+print("Python")
+print("\tpython")
+print("\t\tpython")
+
+
+print("Writespace Salto de linea")
+print("language: \n\tpython\nc\n\tJavascript")
+
+
+#Eliminacion de espacios en blanco
+programmcion_languages = " python "
+print(programmcion_languages)
+print(programmcion_languages.rstrip())
+print(programmcion_languages.lstrip())
+print(programmcion_languages.strip())
+
+
+
+#Syntax Error con String
+message = 'una fortaleza de python es su comunidad'
+print(message)
+message = 'una fortaleza de " pytho " es su comunidad'
