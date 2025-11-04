@@ -91,3 +91,31 @@ print(programmcion_languages.strip())
 message = 'una fortaleza de python es su comunidad'
 print(message)
 message = 'una fortaleza de " pytho " es su comunidad'
+
+# f-strings
+
+famous_person = "Taylor Swift"
+message = f"{famous_person} una vez dijo me voy al oxxo en avion"
+print(message)
+
+print( f"{famous_person.upper()} una vez dijo me voy al oxxo en avion")
+
+"""
+   Elige una persona famosa (quien tu quieras)
+   Elige una cita famosa de esta persona
+   Iguala ambos strings a una variable
+
+   1) realiza la concatenacion utilizando el signo de suma
+   2)utiliza la concatenacion utilizando fstring
+
+"""
+
+
+
+name_famous = "Cristiano Ronaldo"
+quote = "cristiano es mejor que messi"
+famous_message = name_famous + " " + quote
+print(name_famous+" "+quote) 
+
+f_string_message_ = f"{name_famous}{quote}"
+print(f_string_message_)
