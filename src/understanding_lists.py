@@ -42,9 +42,72 @@ print(message_f)
 
 ## Agregar elementos a una lista
 
+"""
+    #Listas A-105
+    Agrega elementos a una lista 
+        -append(): Agregar elementos a una lista.
+"""
+
+print("\n-- agregar elemntos a una lista metodo append()---"  )
+motorcycles = ["honda", "yamaha", "suzuki"]
+print(motorcycles) # salida: ["honda", "yamaha", "suzuki" ]
+motorcycles.append("ducatti")
+print(motorcycles) # salida: ["honda", "yamaha", "suzuki", "ducatti" ]
+"""
+agregar elemntos a una lista en una pocision especifica
+- insert(): agrega un elemnto en una pocision especifica de la lista
+""" 
+print("\n-- agregar elemntos a una lista metodo insert()---"  )
+motorcycles = ["honda", "yamaha", "suzuki"] 
+print(motorcycles) # salida: ["honda", "yamaha", "suzuki" ]
+motorcycles.insert(1, "ducatti")
+print(motorcycles) # salida: ["ducatti", "honda", "yamaha", "suzuki" ]
+
+"""
+eliminar elemntos de una lista
+- del: elimina un elemnto de una lista en una pocision especifica
+"""
+print("\n-- eliminar elemntos de una lista metodo del---"  )
+motorcycles = ["honda", "yamaha", "suzuki"]
+print(motorcycles) # salida: ["honda", "yamaha", "suzuki" ]
+del motorcycles[0]
+print(motorcycles) # salida: ["honda", "suzuki" ]
+
+""" 
+Eliminar elemntos de una lista y usar el valor eliminado
+- pop(): elimina y devuelve el ultimo elemnto de una lista
+""" 
+print("\n-- eliminar elemntoos de una lista y usar el valor eliminado metodo pop()---"  )
+motorcycles = ["honda", "yamaha", "suzuki"]
+print(motorcycles) # salida: ["honda", "yamaha", "suzuki" ]
+last_motorcycle = motorcycles.pop(1)
+print(motorcycles) # salida: ["honda", "yamaha" ]
+print(f"la ultima motocicleta que compre fue una {last_motorcycle},")
+
+
+"""
+Eliminar un elemnto especifico de una lista por valor
+- remove(): elimina un elemnto especifico de una lista por valor
+"""
+print("\n-- eliminar un elemnto especifico de una lista por valor metodo remove()---"  )
+motorcycles = ["honda", "yamaha", "suzuki", "ducatti"]
+print(motorcycles) # salida: ["honda", "yamaha", "suzuki", "ducatti" ]
+motorcycles.remove("ducatti")
+print(motorcycles) # salida: ["honda", "yamaha", "suzuki" ]
 print("\n")
-print("Agregar elementos a una lista")
-print(bicycles)
-print("Metodo de la lista para agregar elementos: list_name.append(element)")
-bicycles.append("ducatti")
-print(bicycles)
+# Nota: Si se desea usar el valor eliminado, es recomendable usar pop() en lugar de remove() ya que remove() no devuelve el valor eliminado.
+# Fin del archivo understanding_lists.py
+
+
+""""
+#Listas A-105
+organiza una lista permanentemente
+- sort(): organiza una lista permanentemente en orden alfabetico        
+
+"""
+
+print("\n-- organiza una lista permanentemente metodo sort()---"  )
+cars = ["bmw", "audi", "toyota", "subaru"]          
+print(cars) # salida: ['bmw', 'audi', 'toyota', 'subaru']
+cars.sort()
+print(cars) # salida: ['audi', 'bmw', 'subaru', 'toyota']
