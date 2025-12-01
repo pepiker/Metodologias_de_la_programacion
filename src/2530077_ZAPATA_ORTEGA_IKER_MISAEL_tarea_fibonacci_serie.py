@@ -1,4 +1,6 @@
 # Fibonacci Series with Python ;)
+# Alumno: Iker Misael Zapata Ortega
+# Matricula: 2530077
 
 """
   
@@ -7,7 +9,7 @@ Antes del código, agrega algo como (en comentarios):
 Problem: Fibonacci series generator  
 Description: Program that reads an integer n and prints the first n terms of the Fibonacci series starting at 0 and 1.  
 
-Inputs:  
+Inputs:  /
 - n (int; number of terms to generate)  
 
 Outputs:  
