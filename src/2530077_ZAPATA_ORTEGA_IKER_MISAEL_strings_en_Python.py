@@ -3,8 +3,8 @@
    Alumno: Iker Misael Zapata Ortega
    Matricula: 2530077
 
+   """
 
-"""
 
 ##RESUMEN EJECUTIVO 
 
@@ -75,7 +75,26 @@ initials = ".".join([p[0].upper() for p in parts]) + "."
 print("Formatted name:", formatted_name)
 print("Initials:", initials)
 
+"""
+1) Normal Case
 
+(.venv) PS C:\Users\iker misael\pyton_proyects\Metodologias_de_la_programacion> python .\src\2530077_ZAPATA_ORTEGA_IKER_MISAEL_strings_en_Python.py
+Enter full name:   juan   carlos   tovar
+Formatted name: Juan Carlos Tovar
+Initials: J.C.T.
+
+2) Border Case (Caso Límite)
+(.venv) PS C:\Users\iker misael\pyton_proyects\Metodologias_de_la_programacion> python .\src\2530077_ZAPATA_ORTEGA_IKER_MISAEL_strings_en_Python.py
+Enter full name:   ana     lopez
+Formatted name: Ana Lopez
+Initials: A.L.
+
+3) Error Case
+(.venv) PS C:\Users\iker misael\pyton_proyects\Metodologias_de_la_programacion> python .\src\2530077_ZAPATA_ORTEGA_IKER_MISAEL_strings_en_Python.py
+Enter full name:    
+Error: Name cannot be empty.
+
+"""
 """
 --------------------------------------------------
 7.2 Problem 2: Simple email validator (structure + domain)
@@ -140,6 +159,25 @@ domain = email_text[at_index + 1:]
 print("Domain:", domain)
 
 """
+1) Normal Case
+(.venv) PS C:\Users\iker misael\pyton_proyects\Metodologias_de_la_programacion> python .\src\2530077_ZAPATA_ORTEGA_IKER_MISAEL_strings_en_Python.py
+Enter email:   usuario123@gmail.com
+Valid email: true
+Domain: gmail.com
+2) Border Case (caso límite)
+(.venv) PS C:\Users\iker misael\pyton_proyects\Metodologias_de_la_programacion> python .\src\2530077_ZAPATA_ORTEGA_IKER_MISAEL_strings_en_Python.py
+Enter email:     admin@empresa.org    
+Valid email: true
+Domain: empresa.org
+3) Error Case
+(.venv) PS C:\Users\iker misael\pyton_proyects\Metodologias_de_la_programacion> python .\src\2530077_ZAPATA_ORTEGA_IKER_MISAEL_strings_en_Python.py
+Enter email: juan@@mail.com
+Valid email: false
+
+
+"""
+
+"""
 
     --------------------------------------------------
 7.3 Problem 3: Palindrome checker (ignoring spaces and case)
@@ -188,6 +226,26 @@ is_palindrome = (normalized == normalized[::-1])
 # Salidas
 print("Is palindrome:", "true" if is_palindrome else "false")
 print("Normalized phrase:", normalized)
+
+"""
+    1) Normal Case (frase palíndroma válida)
+    (.venv) PS C:\Users\iker misael\pyton_proyects\Metodologias_de_la_programacion> python .\src\2530077_ZAPATA_ORTEGA_IKER_MISAEL_strings_en_Python.py
+Enter a phrase: Anita lava la tina
+Is palindrome: true
+Normalized phrase: anitalavalatina
+    2) Border Case (caso límite)
+    (.venv) PS C:\Users\iker misael\pyton_proyects\Metodologias_de_la_programacion> python .\src\2530077_ZAPATA_ORTEGA_IKER_MISAEL_strings_en_Python.py
+Enter a phrase: oso
+Is palindrome: true
+Normalized phrase: oso
+    3) Error Case
+(.venv) PS C:\Users\iker misael\pyton_proyects\Metodologias_de_la_programacion> python .\src\2530077_ZAPATA_ORTEGA_IKER_MISAEL_strings_en_Python.py
+Enter a phrase: hola mundo
+Is palindrome: false
+Normalized phrase: holamundo
+
+"""
+
 
 """
     --------------------------------------------------
@@ -254,6 +312,34 @@ print("Last word:", last_word)
 print("Shortest word:", shortest_word)
 print("Longest word:", longest_word)
 
+
+"""
+    1) Normal Case (oración válida)
+(.venv) PS C:\Users\iker misael\pyton_proyects\Metodologias_de_la_programacion> python .\src\2530077_ZAPATA_ORTEGA_IKER_MISAEL_strings_en_Python.py
+Enter a sentence: hola este es un ejemplo
+Word count: 5
+First word: hola
+Last word: ejemplo
+Shortest word: es
+Longest word: ejemplo
+
+2) Border Case (caso límite: una sola palabra)
+(.venv) PS C:\Users\iker misael\pyton_proyects\Metodologias_de_la_programacion> python .\src\2530077_ZAPATA_ORTEGA_IKER_MISAEL_strings_en_Python.py
+Enter a sentence: hola
+Word count: 1
+First word: hola
+Last word: hola
+Shortest word: hola
+Longest word: hola
+
+3) Error Case (entrada vacía)
+(.venv) PS C:\Users\iker misael\pyton_proyects\Metodologias_de_la_programacion> python .\src\2530077_ZAPATA_ORTEGA_IKER_MISAEL_strings_en_Python.py
+Enter a sentence:
+Error: Sentence cannot be empty.
+
+
+
+"""
 """
     
 --------------------------------------------------
@@ -331,7 +417,25 @@ if has_upper and has_lower and has_digit and has_symbol:
 
 # Caso 3: Medium (cumple algunas, pero no todas)
 print("Password strength: medium")
+"""
+1) Normal Case (contraseña fuerte)
+(.venv) PS C:\Users\iker misael\pyton_proyects\Metodologias_de_la_programacion> python .\src\2530077_ZAPATA_ORTEGA_IKER_MISAEL_strings_en_Python.py
+Enter password: Abc123!@
+Password strength: strong
 
+2) Border Case (caso límite: longitud = 8 pero sin símbolos → medium)
+(.venv) PS C:\Users\iker misael\pyton_proyects\Metodologias_de_la_programacion> python .\src\2530077_ZAPATA_ORTEGA_IKER_MISAEL_strings_en_Python.py
+Enter password: Abc12345
+Password strength: medium
+
+3) Error Case (contraseña vacía → weak)
+(.venv) PS C:\Users\iker misael\pyton_proyects\Metodologias_de_la_programacion> python .\src\2530077_ZAPATA_ORTEGA_IKER_MISAEL_strings_en_Python.py
+Enter password:
+Password strength: weak
+
+
+
+"""
 """
     --------------------------------------------------
 7.6 Problem 6: Product label formatter (fixed-width text)
@@ -401,7 +505,27 @@ else:
     label = label[:30]
 
 print("Label:", f"'{label}'")  # Entre comillas para mostrar espacios
+"""
+1) Normal Case (producto y precio válidos)
+(.venv) PS C:\Users\iker misael\pyton_proyects\Metodologias_de_la_programacion> python .\src\2530077_ZAPATA_ORTEGA_IKER_MISAEL_strings_en_Python.py
+Enter product name: Galletas
+Enter price: 12.5
+Label: 'Product: Galletas | Price: $12.5   '
 
+2) Border Case (etiqueta exactamente de 30 caracteres)
+(.venv) PS C:\Users\iker misael\pyton_proyects\Metodologias_de_la_programacion> python .\src\2530077_ZAPATA_ORTEGA_IKER_MISAEL_strings_en_Python.py
+Enter product name: Pan
+Enter price: 10
+Label: 'Product: Pan | Price: $10      '
+
+3) Error Case (precio inválido)
+(.venv) PS C:\Users\iker misael\pyton_proyects\Metodologias_de_la_programacion> python .\src\2530077_ZAPATA_ORTEGA_IKER_MISAEL_strings_en_Python.py
+Enter product name: Refresco
+Enter price: abc
+Error: Invalid price format.
+
+
+"""
 
 # El manejo de strings es fundamental porque casi toda la entrada y salida de datos
 # del usuario llega en forma de texto y debe ser procesada correctamente.

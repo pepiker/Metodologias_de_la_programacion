@@ -93,19 +93,33 @@ print("Fibonacci series:", " ".join(str(num) for num in fib))
 # 2) Python Fibonacci Tutorials – Real Python / W3Schools: explicación de listas y generación de secuencias.
 # 3) Apuntes de clase de Programación (Unidad: Estructuras de control y ciclos).
 
-"""
-  Casos de prueba 
+##Casos de prueba 
   
-1) (.vnv) PS C:\Users\iker misael\tarea charly> py '.\Fibonacci_Series_with_Python .py'
-Number of terms: 0
-Error: invalid input
-2)
-(.vnv) PS C:\Users\iker misael\tarea charly> py '.\Fibonacci_Series_with_Python .py'
-Number of terms: 6
-Fibonacci series: 0 1 1 2 3 5
- 3) 
-(.vnv) PS C:\Users\iker misael\tarea charly> py '.\Fibonacci_Series_with_Python .py'
-Number of terms: 1
-Fibonacci series: 0
+#1) (.vnv) PS C:\Users\iker misael\tarea charly> py '.\Fibonacci_Series_with_Python .py'
+#Number of terms: 0
+##Error: invalid input
+#2)
+#(.vnv) PS C:\Users\iker misael\tarea charly> py '.\Fibonacci_Series_with_Python .py'
+#Number of terms: 6
+#Fibonacci series: 0 1 1 2 3 5
+# 3) 
+#(.vnv) PS C:\Users\iker misael\tarea charly> py '.\Fibonacci_Series_with_Python .py'
+#number of terms: 1
+#Fibonacci series: 0
 
-"""
+
+## # References:
+# 1) Python Documentation – Built-in Types (list, int):
+#    https://docs.python.org/3/library/stdtypes.html
+#
+# 2) Python Documentation – Errors and Exceptions (ValueError, try/except):
+#    https://docs.python.org/3/tutorial/errors.html
+#
+# 3) Python Documentation – Control Flow: for, if, range:
+#    https://docs.python.org/3/tutorial/controlflow.html
+#
+# 4) Real Python – Fibonacci Sequence Tutorial (explicación y ejemplos):
+#    https://realpython.com/fibonacci-sequence-python/
+#
+# 5) W3Schools – Python Loops and Lists (listas, range, ciclos):
+#    https://www.w3schools.com/python/python_lists.asp
